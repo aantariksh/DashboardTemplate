@@ -22,13 +22,13 @@
     <link rel="stylesheet" href="./assets/css/theme.min.css">
   </head>
 
-  <body class="footer-offset footer-offset has-navbar-vertical-aside navbar-vertical-aside-show-xl"><header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
+  <body class="footer-offset footer-offset has-navbar-vertical-aside navbar-vertical-aside-show-xl" data-select2-id="10"><header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
   <div class="navbar-nav-wrap">
     <div class="navbar-brand-wrapper">
       <!-- Logo -->
       <a class="navbar-brand" href="./index.html" aria-label="Front">
-        <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo">
-        <img class="navbar-brand-logo-mini" src="./assets/svg/logos/logo-short.svg" alt="Logo">
+        <img class="navbar-brand-logo" src="./assets/svg/logos/logo.png" alt="Logo">
+        <img class="navbar-brand-logo-mini" src="./assets/svg/logos/logo-short.png" alt="Logo">
       </a>
       <!-- End Logo -->
     </div>
@@ -422,13 +422,13 @@
       <div class="navbar-vertical-content">
         <ul class="navbar-nav navbar-nav-lg nav-tabs">
           <!-- Dashboards -->
-          <li class="navbar-vertical-aside-has-menu show">
+          <li class="navbar-vertical-aside-has-menu">
             <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Dashboards">
               <i class="tio-home-vs-1-outlined nav-icon"></i>
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Dashboards</span>
             </a>
 
-            <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: block; top: 60px; transition: unset;">
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none; top: 60px; transition: unset;">
               <li class="nav-item">
                 <a class="nav-link " href="./index.html" title="Default">
                   <span class="tio-circle nav-indicator-icon"></span>
@@ -451,25 +451,26 @@
           </li>
 
           <!-- Pages -->
-          <li class="navbar-vertical-aside-has-menu">
+          <li class="navbar-vertical-aside-has-menu show">
             <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle active" href="javascript:;" title="Pages">
               <i class="tio-pages-outlined nav-icon"></i>
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Pages</span>
             </a>
 
-            <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none; top: 109px; transition: unset;">
-              <li class="navbar-vertical-aside-has-menu">
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="top: 150px; transition: unset; display: block;">
+              <li class="navbar-vertical-aside-has-menu show">
                 <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Users">
                   <span class="tio-circle nav-indicator-icon"></span>
                   <span class="text-truncate">Users</span>
                 </a>
 
-                <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: block; top: 0px;">
+                <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: block; top: 49px;">
+                  
                   <li class="nav-item">
-                    
-                  </li>
-                  <li class="nav-item">
-                    
+                    <a class="nav-link " href="./users.html" title="Overview">
+                      <span class="tio-circle-outlined nav-indicator-icon"></span>
+                      <span class="text-truncate">Overview</span>
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="./users-add-user.html" title="Add User">
@@ -552,7 +553,59 @@
 
               
 
-              <li class="nav-item">
+              <li class="navbar-vertical-aside-has-menu">
+                <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="User Profile">
+                  <span class="tio-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">User Profile </span>
+                </a>
+
+                <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none; top: 83px;">
+                  <li class="nav-item">
+                    <a class="nav-link " href="./user-profile.html" title="Profile">
+                      <span class="tio-circle-outlined nav-indicator-icon"></span>
+                      <span class="text-truncate">Profile</span>
+                    </a>
+                  </li>
+                  
+                  
+                  
+                  
+                </ul>
+              </li>
+<li class="navbar-vertical-aside-has-menu">
+                <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Account">
+                  <span class="tio-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Account</span>
+                </a>
+
+                <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none; top: 149.891px;">
+                  <li class="nav-item">
+                    <a class="nav-link " href="./account-settings.html" title="Settings">
+                      <span class="tio-circle-outlined nav-indicator-icon"></span>
+                      <span class="text-truncate">Settings</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./account-billing.html" title="Billing">
+                      <span class="tio-circle-outlined nav-indicator-icon"></span>
+                      <span class="text-truncate">Billing</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./account-invoice.html" title="Invoice">
+                      <span class="tio-circle-outlined nav-indicator-icon"></span>
+                      <span class="text-truncate">Invoice</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./account-api-keys.html" title="API Keys">
+                      <span class="tio-circle-outlined nav-indicator-icon"></span>
+                      <span class="text-truncate">API Keys</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+<li class="nav-item">
                 <a class="nav-link " href="./referrals.html" title="Referrals">
                   <span class="tio-circle nav-indicator-icon"></span>
                   <span class="text-truncate">Referrals</span>
@@ -599,33 +652,7 @@
           
           
 
-          <li class="navbar-vertical-aside-has-menu">
-                <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Account">
-                  <span class="tio-circle nav-indicator-icon"></span>
-                  <span class="text-truncate">Account</span>
-                </a>
-
-                <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none; top: 83px;">
-                  <li class="nav-item">
-                    
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="./account-billing.html" title="Billing">
-                      <span class="tio-circle-outlined nav-indicator-icon"></span>
-                      <span class="text-truncate">Billing</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="./account-invoice.html" title="Invoice">
-                      <span class="tio-circle-outlined nav-indicator-icon"></span>
-                      <span class="text-truncate">Invoice</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    
-                  </li>
-                </ul>
-              </li>
+          
 
           
 
@@ -734,7 +761,7 @@
       
     </div>
   </div>
-</aside><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div>
+</aside><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div>
     
       <script src="./assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
     
@@ -814,7 +841,7 @@
                 &quot;stepsSelector&quot;: &quot;#addUserStepFormContent&quot;,
                 &quot;endSelector&quot;: &quot;#addUserFinishBtn&quot;,
                 &quot;isValidate&quot;: false
-              }">
+              }" data-select2-id="9">
           <div class="row justify-content-lg-center">
             <div class="col-lg-8">
               <!-- Step -->
@@ -859,7 +886,7 @@
                 <!-- Card -->
                 <div id="addUserStepProfile" class="card card-lg active">
                   <!-- Body -->
-                  <div class="card-body">
+                  <div class="card-body" data-select2-id="8">
                     <!-- Form Group -->
                     <div class="row form-group">
                       <label class="col-sm-3 col-form-label input-label">Avatar</label>
@@ -922,26 +949,16 @@
                           }">
                       <label for="phoneLabel" class="col-sm-3 col-form-label input-label">Phone <span class="input-label-secondary">(Optional)</span></label>
 
-                      <div class="col-sm-9">
-                        <div class="input-group input-group-sm-down-break align-items-center">
+                      <div class="col-sm-9" data-select2-id="7">
+                        <div class="input-group input-group-sm-down-break align-items-center" data-select2-id="6">
                           <input type="text" class="js-masked-input form-control" name="phone" id="phoneLabel" placeholder="+x(xxx)xxx-xx-xx" aria-label="+x(xxx)xxx-xx-xx" data-hs-mask-options="{
                                    &quot;template&quot;: &quot;+0(000)000-00-00&quot;
                                  }" maxlength="16">
 
-                          <div class="input-group-append">
+                          <div class="input-group-append" data-select2-id="5">
                             <!-- Select -->
-                            <div class="select2-custom">
-                              <select class="js-select2-custom custom-select select2-hidden-accessible" size="1" style="opacity: 0;" name="phoneSelect" data-hs-select2-options="{
-                                      &quot;minimumResultsForSearch&quot;: &quot;Infinity&quot;,
-                                      &quot;dropdownAutoWidth&quot;: true,
-                                      &quot;width&quot;: &quot;6rem&quot;
-                                    }" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                <option value="Mobile" selected="" data-select2-id="3">Mobile</option>
-                                <option value="Home" data-select2-id="4">Home</option>
-                                <option value="Work" data-select2-id="5">Work</option>
-                                <option value="Fax" data-select2-id="6">Fax</option>
-                                <option value="Direct" data-select2-id="7">Direct</option>
-                              </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 6rem;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-phoneSelect-ce-container"><span class="select2-selection__rendered" id="select2-phoneSelect-ce-container" role="textbox" aria-readonly="true" title="Mobile"><span>Mobile</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 6rem;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-phoneSelect-k4-container"><span class="select2-selection__rendered" id="select2-phoneSelect-k4-container" role="textbox" aria-readonly="true" title="Mobile"><span>Mobile</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 6rem;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-phoneSelect-lo-container"><span class="select2-selection__rendered" id="select2-phoneSelect-lo-container" role="textbox" aria-readonly="true" title="Mobile"><span>Mobile</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 6rem;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-phoneSelect-ps-container"><span class="select2-selection__rendered" id="select2-phoneSelect-ps-container" role="textbox" aria-readonly="true" title="Mobile"><span>Mobile</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            <div class="select2-custom" data-select2-id="4">
+                              <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" data-select2-id="1" style="width: 6rem;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="true" tabindex="-1" aria-disabled="false" aria-labelledby="select2-phoneSelect-v7-container" aria-owns="select2-phoneSelect-v7-results"><span class="select2-selection__rendered" id="select2-phoneSelect-v7-container" role="textbox" aria-readonly="true" title="Mobile"><span>Mobile</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                               <!-- End Select -->
                             </div>
                           </div>
@@ -1328,7 +1345,7 @@
                             <option value="YE" data-option-template="<span class=&quot;d-flex align-items-center&quot;><img class=&quot;avatar avatar-xss avatar-circle mr-2&quot; src=&quot;./assets/vendor/flag-icon-css/flags/1x1/ye.svg&quot; alt=&quot;Yemen Flag&quot; /><span class=&quot;text-truncate&quot;>Yemen</span></span>" data-select2-id="257">Yemen</option>
                             <option value="ZM" data-option-template="<span class=&quot;d-flex align-items-center&quot;><img class=&quot;avatar avatar-xss avatar-circle mr-2&quot; src=&quot;./assets/vendor/flag-icon-css/flags/1x1/zm.svg&quot; alt=&quot;Zambia Flag&quot; /><span class=&quot;text-truncate&quot;>Zambia</span></span>" data-select2-id="258">Zambia</option>
                             <option value="ZW" data-option-template="<span class=&quot;d-flex align-items-center&quot;><img class=&quot;avatar avatar-xss avatar-circle mr-2&quot; src=&quot;./assets/vendor/flag-icon-css/flags/1x1/zw.svg&quot; alt=&quot;Zimbabwe Flag&quot; /><span class=&quot;text-truncate&quot;>Zimbabwe</span></span>" data-select2-id="259">Zimbabwe</option>
-                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="8" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="8" style="width: 100%;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-locationLabel-container"><span class="select2-selection__rendered" id="select2-locationLabel-container" role="textbox" aria-readonly="true" title="United Kingdom"><span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="United Kingdom Flag"><span class="text-truncate">United Kingdom</span></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                         </div>
                         <!-- End Select -->
 
